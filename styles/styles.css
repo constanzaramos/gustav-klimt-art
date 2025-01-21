@@ -152,54 +152,87 @@ footer a:hover {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-  nav {
-      padding: 10px;
-      top: 0;
-      right: 0;
-  }
-
-  nav .menu-bar {
-      flex-direction: column;
-      align-items: flex-end;
-  }
-
-  nav .menu-bar li {
-      margin: 5px 0;
+/* mobile */
+@media (max-width: 480px) {
+  nav .menu-bar a {
+    font-size: 16px;
+    padding: 5px 10px;
   }
 
   main h1 {
-      font-size: 2.5rem;
-      padding: 0 10px;
+    font-size: 2rem;
   }
 
   main button {
-      font-size: 0.9rem;
-      padding: 8px 15px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
   }
 
   footer {
-      padding: 10px;
-      font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 480px) {
+/* tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav .menu-bar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   nav .menu-bar a {
-      font-size: 16px;
-      padding: 5px 10px;
+    font-size: 18px;
+    padding: 8px 12px;
   }
 
   main h1 {
-      font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   main button {
-      font-size: 0.8rem;
-      padding: 5px 10px;
+    font-size: 1rem;
+    padding: 10px 15px;
   }
 
   footer {
-      font-size: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* desktop */
+@media (min-width: 769px) {
+  body {
+    padding: 0 10%;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav .menu-bar {
+    justify-content: flex-end;
+  }
+
+  nav .menu-bar a {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+  }
+
+  main button {
+    font-size: 1.2rem;
+    padding: 15px 25px;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }
