@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Gustav Klimt</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu-bar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../pages/biography.html">Biografía</a></li>
+          <li><a href="../pages/gallery.html">Obras</a></li>
+          <li><a href="../pages/shop.html">Tienda</a></li>
+          <li><a href="../pages/contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <h1>Contacto</h1>
+      <form action="/submit" method="POST">
+        <label for="name">Nombre</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Tu nombre"
+          required
+        /><br /><br />
+
+        <label for="email">Correo Electrónico</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Tu correo electrónico"
+          required
+        /><br /><br />
+
+        <label for="subject">Asunto</label><br />
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Asunto del mensaje"
+          required
+        /><br /><br />
+
+        <label for="message">Mensaje</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Tu mensaje"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </body>
+    <footer>
+      <p>&copy; 2024 Created by Constanza Ramos</p>
+    </footer>
+  </body>
+</html>
