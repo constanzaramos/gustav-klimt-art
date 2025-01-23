@@ -7,87 +7,140 @@
       name="description"
       content="Sitio dedicado a la vida y obra de Gustav Klimt, el célebre pintor austriaco. Explora su biografía, obras y más."
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../gustav-klimt/styles/styles.css" />
-    <title>Gustav Klimt</title>
+    <title>Gustav Klimt - Contacto</title>
     <link
       rel="icon"
       href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg"
       type="image/x-icon"
       sizes="32x32"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="menu-bar">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../pages/biography.html">Biografía</a></li>
-          <li><a href="../pages/gallery.html">Obras</a></li>
-          <li><a href="../pages/shop.html">Tienda</a></li>
-          <li><a href="../pages/contact.html">Contacto</a></li>
-        </ul>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 position-fixed w-100 top-0 start-0 z-index-100"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./biography.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Obras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <body>
-      <h1>Contacto</h1>
-      <form action="/submit" method="POST">
-        <label for="name">Nombre</label><br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Tu nombre"
-          required
-        /><br /><br />
 
-        <label for="email">Correo Electrónico</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Tu correo electrónico"
-          required
-        /><br /><br />
+    <main class="container mt-5 pt-5">
+      <h1 class="contact-page-title text-center mb-4">Contacto</h1>
+      <div class="row">
+        <div class="col-lg-7 col-md-12">
+          <form
+            action="/submit"
+            method="POST"
+            class="p-4 border rounded shadow-sm"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
 
-        <label for="subject">Asunto</label><br />
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Asunto del mensaje"
-          required
-        /><br /><br />
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Tu correo electrónico"
+                required
+              />
+            </div>
 
-        <label for="message">Mensaje</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          placeholder="Tu mensaje"
-          required
-        ></textarea
-        ><br /><br />
+            <div class="mb-3">
+              <label for="subject" class="form-label">Asunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control"
+                placeholder="Asunto del mensaje"
+                required
+              />
+            </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10639.141226234744!2d16.362478266024752!3d48.191487928163646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d077d020b9ea5%3A0x4a65fc52a0937607!2sPalacio%20Belvedere!5e0!3m2!1ses-419!2scl!4v1737491693693!5m2!1ses-419!2scl"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </body>
-    <footer>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="5"
+                placeholder="Tu mensaje"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+        <div class="col-lg-5 col-md-12 mt-4 mt-lg-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10639.141226234744!2d16.362478266024752!3d48.191487928163646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d077d020b9ea5%3A0x4a65fc52a0937607!2sPalacio%20Belvedere!5e0!3m2!1ses-419!2scl!4v1737491693693!5m2!1ses-419!2scl"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center p-3 mt-4">
       <p>&copy; 2024 Created by Constanza Ramos</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

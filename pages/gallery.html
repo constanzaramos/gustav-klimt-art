@@ -1,92 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Sitio dedicado a la vida y obra de Gustav Klimt, el célebre pintor austriaco. Explora su biografía, obras y más."
-        />
-        <link rel="stylesheet" href="../gustav-klimt/styles/styles.css" />
-        <title>Gustav Klimt</title>
-        <link
-          rel="icon"
-          href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg"
-          type="image/x-icon"
-          sizes="32x32"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio dedicado a la vida y obra de Gustav Klimt, el célebre pintor austriaco. Explora su biografía, obras y más."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../gustav-klimt/styles/styles.css" />
+    <title>Gustav Klimt</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="menu-bar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/biography.html">Biografía</a></li>
-                <li><a href="../pages/gallery.html">Obras</a></li>
-                <li><a href="../pages/shop.html">Tienda</a></li>
-                <li><a href="../pages/contact.html">Contacto</a></li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 position-fixed w-100 top-0 start-0 z-index-100"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./biography.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Obras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./shop.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1>Galería de imágenes</h1>
-        <div>
+      <h1 class="text-center my-4">Galería de imágenes</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/der-kuss-klimt.jpg" alt="Imagen de la obra El beso">
-                <figcaption>El beso</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/der-kuss-klimt.jpg"
+                alt="El beso"
+                class="img-fluid"
+              />
+              <figcaption>El beso</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/Dame-mit-Faecher.jpg" alt="Imagen de la obra Mujer con abanico">
-                <figcaption>Mujer con abanico</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/Dame-mit-Faecher.jpg"
+                alt="Mujer con abanico"
+                class="img-fluid"
+              />
+              <figcaption>Mujer con abanico</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/bildnis-adele-bloch-bauer-l.jpg" alt="Imagen de la obra El retrato de Adèle Bloch-Bauer
-                ">
-                <figcaption>El retrato de Adèle Bloch-Bauer
-                </figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/bildnis-adele-bloch-bauer-l.jpg"
+                alt="El retrato de Adèle Bloch-Bauer"
+                class="img-fluid"
+              />
+              <figcaption>El retrato de Adèle Bloch-Bauer</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/detail-aus-die-drei-lebensalter-1.jpg" alt="Imagen de la obra Las tres edades">
-                <figcaption>Las tres edades</figcaption>
-            </figure> 
-               <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/Der-Lebensbaum-Mittelteil-Ausschnitt-1.jpg" alt="Imagen de la obra El árbol de la vida">
-                <figcaption>El árbol de la vida</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/detail-aus-die-drei-lebensalter-1.jpg"
+                alt="Las tres edades"
+                class="img-fluid"
+              />
+              <figcaption>Las tres edades</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/die-jungfrau.jpg" alt="Imagen de la obra La virgen">
-                <figcaption>La virgen</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/Der-Lebensbaum-Mittelteil-Ausschnitt-1.jpg"
+                alt="El árbol de la vida"
+                class="img-fluid"
+              />
+              <figcaption>El árbol de la vida</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/Judith-2.jpg" alt="Imagen de la obra Judith con la cabeza de Holofernes
-                ">
-                <figcaption>Judith con la cabeza de Holofernes
-                </figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/die-jungfrau.jpg"
+                alt="La virgen"
+                class="img-fluid"
+              />
+              <figcaption>La virgen</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/die-erfuellung.jpg" alt="Imagen de la obra El abrazo">
-                <figcaption>El abrazo</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/Judith-2.jpg"
+                alt="Judith con la cabeza de Holofernes"
+                class="img-fluid"
+              />
+              <figcaption>Judith con la cabeza de Holofernes</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/apfelbaum-i_klimt.jpg" alt="Imagen de la obra El manzano">
-                <figcaption>El manzano</figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/die-erfuellung.jpg"
+                alt="El abrazo"
+                class="img-fluid"
+              />
+              <figcaption>El abrazo</figcaption>
             </figure>
+          </div>
+          <div class="col">
             <figure>
-                <img src="https://www.reprodart.com/kunst/gustav_klimt/bauerngarten.jpg" alt="Imagen de la obra Jardín de la granja en flor
-                ">
-                <figcaption>Jardín de la granja en flor
-                </figcaption>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/apfelbaum-i_klimt.jpg"
+                alt="El manzano"
+                class="img-fluid"
+              />
+              <figcaption>El manzano</figcaption>
             </figure>
+          </div>
+          <div class="col">
+            <figure>
+              <img
+                src="https://www.reprodart.com/kunst/gustav_klimt/bauerngarten.jpg"
+                alt="Jardín de la granja en flor"
+                class="img-fluid"
+              />
+              <figcaption>Jardín de la granja en flor</figcaption>
+            </figure>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <p>&copy; 2024 Created by Constanza Ramos </p>
+      <p class="text-center">&copy; 2024 Created by Constanza Ramos</p>
     </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

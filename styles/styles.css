@@ -151,7 +151,66 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Contact form */
+.contact-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
 
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline-color: #7a4d24;
+}
+
+.contact-form button {
+  background-color: #7a4d24;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5a3a1a;
+}
+
+.contact-form iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.contact-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
 /* Responsive styles */
 /* mobile */
 @media (max-width: 480px) {
