@@ -1,71 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Gustav Klimt</title>
-    <link rel="icon" href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio dedicado a la vida y obra de Gustav Klimt, el célebre pintor austriaco. Explora su biografía, obras y más."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../gustav-klimt/styles/styles.css" />
+    <title>Gustav Klimt - Tienda</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/28/fa/0e/28fa0e42eb58e5b14bfc537a2a9283df.jpg"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="menu-bar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/biography.html">Biografía</a></li>
-                <li><a href="../pages/gallery.html">Obras</a></li>
-                <li><a href="../pages/shop.html">Tienda</a></li>
-                <li><a href="../pages/contact.html">Contacto</a></li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 position-sticky top-0 w-100 z-index-100"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./biography.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Obras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <body>
-        <h1>Tienda online</h1>
-        <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/417943274/800x600x2/coasters-masterpieces-gustav-klimt.jpg" alt=" Artículo en venta Posavasos" width="200">
-            <h2>Posavasos</h2>
-            <p>6 posavasos de corcho con ilustraciones.</p>
-            <p><strong>Precio:</strong> $12.50</p>
-            <button>Comprar</button>
+
+    <div class="container my-5">
+      <h1 class="text-center">Tienda Online</h1>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/417943274/800x600x2/coasters-masterpieces-gustav-klimt.jpg"
+              alt="Posavasos"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Posavasos</h5>
+              <p class="card-text">6 posavasos de corcho con ilustraciones.</p>
+              <p><strong>Precio:</strong> $12.50</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-          <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/419805002/800x600x2/cotton-tote-bag-with-lining-gustav-klimt-water-ser.jpg" alt=" Artículo en venta Tote bag" width="200">
-            <h2>Tote bag</h2>
-            <p>Bolsa reutilizable de algodón.</p>
-            <p><strong>Precio:</strong> $15.95</p>
-            <button>Comprar</button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/419805002/800x600x2/cotton-tote-bag-with-lining-gustav-klimt-water-ser.jpg"
+              alt="Tote Bag"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tote Bag</h5>
+              <p class="card-text">Bolsa reutilizable de algodón.</p>
+              <p><strong>Precio:</strong> $15.95</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-          <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/392872821/800x600x2/pill-box-heart-shape-klimt-the-kiss.jpg" alt=" Artículo en venta Pastillero" width="200">
-            <h2>Pastillero</h2>
-            <p>Pastillero metálico con forma de corazón.</p>
-            <p><strong>Precio:</strong> $9.95</p>
-            <button>Comprar</button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/392872821/800x600x2/pill-box-heart-shape-klimt-the-kiss.jpg"
+              alt="Pastillero"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastillero</h5>
+              <p class="card-text">Pastillero metálico con forma de corazón.</p>
+              <p><strong>Precio:</strong> $9.95</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-          <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/312012189/800x600x2/softcover-notebook-a6-judith-klimt.jpg" alt="Artículo en venta Libreta" width="200">
-            <h2>Libreta</h2>
-            <p>Libreta de croquis A6.</p>
-            <p><strong>Precio:</strong> $20.00</p>
-            <button>Comprar</button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/312012189/800x600x2/softcover-notebook-a6-judith-klimt.jpg"
+              alt="Libreta"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Libreta</h5>
+              <p class="card-text">Libreta de croquis A6.</p>
+              <p><strong>Precio:</strong> $20.00</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-          <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/343101567/800x600x2/pocket-mirror-80-mm-klimt-beer.jpg" alt="Artículo en venta Espejo" width="200">
-            <h2>Espejo</h2>
-            <p>Espejo redondo de bolsillo.</p>
-            <p><strong>Precio:</strong> $5.95</p>
-            <button>Comprar</button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/343101567/800x600x2/pocket-mirror-80-mm-klimt-beer.jpg"
+              alt="Espejo"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Espejo</h5>
+              <p class="card-text">Espejo redondo de bolsillo.</p>
+              <p><strong>Precio:</strong> $5.95</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-          <div>
-            <img src="https://cdn.webshopapp.com/shops/290353/files/426382581/800x600x2/mug-the-kiss-gustav-klimt.jpg" alt="Artículo en venta Mug" width="200">
-            <h2>Mug</h2>
-            <p>Mug de loza.</p>
-            <p><strong>Precio:</strong> $10.95</p>
-            <button>Comprar</button>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://cdn.webshopapp.com/shops/290353/files/426382581/800x600x2/mug-the-kiss-gustav-klimt.jpg"
+              alt="Mug"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mug</h5>
+              <p class="card-text">Mug de loza.</p>
+              <p><strong>Precio:</strong> $10.95</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
           </div>
-    </body>
-    <footer>
-        <p>&copy; 2024 Created by Constanza Ramos</p>
-      </footer>
-</body>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Created by Constanza Ramos</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
