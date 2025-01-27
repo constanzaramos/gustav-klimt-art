@@ -1,8 +1,6 @@
 
 # 🖼️ Gustav Klimt Art - Proyecto Web
 
-![Gustav Klimt Banner](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Klimt_-_The_Kiss.jpg/800px-Klimt_-_The_Kiss.jpg)
-
 📌 **Descripción**  
 Este es un sitio web dedicado a la vida y obra de **Gustav Klimt**, el célebre pintor austriaco. El proyecto tiene un diseño **responsive**, con un enfoque **mobile-first**, utilizando **HTML, CSS y Bootstrap** para asegurar una experiencia óptima en dispositivos móviles y de escritorio.
 
