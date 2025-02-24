@@ -1,6 +1,4 @@
 // Variables
-$body-background: #F7E7CE;
-$font-family: "Questrial", serif;
 $primary-color: #fff;
 $secondary-color: #000;
 $background-button: #683607;
@@ -11,16 +9,74 @@ $menu-underline: #fff;
 $text-shadow-main: 2px 2px 10px rgba(0, 0, 0, 0.7);
 $contact-background: #7a4d24;
 $contact-hover-background: #5a3a1a;
-$gold-klimt: #D4AF37;
-$terracotta: #B35D3A;
-$olive-green: #556B2F;
-$deep-blue: #1A374D;
 $cream: #F5E1A4;
+$font-family: "Questrial", serif; 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  animation: fadeInDown 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
 
 // General styles
 body {
   margin: 0;
-  background-color: $body-background;
+  background-color: #F7E7CE;
   font-family: $font-family;
   font-weight: 400;
   font-style: normal;
@@ -34,9 +90,13 @@ body {
   }
 }
 
-// Home Page Body
-.home-page-body {
+.biography-page-body {
   background-color: $body-background;
+  @extend .fade-in;
+}
+
+.home-body {
+  background-image: url("../imagenes/262058.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -69,6 +129,9 @@ body {
   border-radius: 5px;
   background-color: $background-button;
 }
+.home-title{
+  color: white;
+}
 
 // Estilos para enlaces
 a:-webkit-any-link {
@@ -84,6 +147,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 2;
+  @extend .fade-in-down;
 
   .menu-bar {
     list-style-type: none;
@@ -155,6 +219,7 @@ main {
   text-align: center;
   position: relative;
   z-index: 2;
+  @extend .fade-in;
 
   h1 {
     font-size: 3.5rem;
@@ -202,13 +267,14 @@ main {
   }
 }
 
-//Gallery 
-.img-fluid{
-    width: 100%;
-    height: 200px;     
-    border-radius: 5px; 
-    background-color: #7a4d24;
-  }
+// Gallery 
+.img-fluid {
+  width: 100%;
+  height: 200px;     
+  border-radius: 5px; 
+  background-color: #7a4d24;
+  @extend .hover-zoom;
+}
 
 // Footer
 footer {
@@ -220,6 +286,7 @@ footer {
   padding: 10px 20px;
   color: $primary-color;
   text-shadow: $nav-text-shadow;
+  @extend .fade-in-up;
 
   a {
     text-decoration: none;
@@ -301,8 +368,4 @@ footer {
   font-weight: 700;
   color: #333;
   margin-bottom: 30px;
-}
-
-body .biography-page-body {
-  background-color: #F7E7CE;
 }
